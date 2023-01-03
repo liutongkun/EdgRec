@@ -1,1 +1,15 @@
-The code will come soon
+This is the code for the paper entitled "Reconstruction from edge image combined with color and gradient difference for industrial surface anomaly detection" (https://arxiv.org/abs/2210.14485)
+Currently the paper is under review, so we provide the initial code here, which may not be so clear and refined. We will refine the code and the introduction later. If you have any questions, you could also contact ltk988633@stu.xjtu.edu.cn, both in English or Chinese are OK.
+
+The code is implemented in pytorch, and most basic codes are from https://github.com/VitjanZ/DRAEM.
+
+On average, our method can achieve 97.8(AUROC) detection performance on the MVTec AD dataset. To train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies).
+The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path' to your own path which include the mvtec ad dataset and the dtd dataset respectively.
+For testing, you could visualize the result images by add '--saveimages' (cost more time), otherwise it will only show the performance (faster)
+
+Like:
+python train.py --gpu_id 0 --obj_id -1 --lr 0.0001 --bs 8 --epochs 800 --data_path .../mvtec_ad/ --anomaly_source_path .../dtd/images --log_path . --checkpoint_path . --visualize
+
+python test.py --gpu_id 0 --base_model_name xxx(your checkpoint name) --data_path .../mvtec_ad/ --checkpoint_path xxx(your checkpoint path) --saveimages
+
+Pretraiend models on MVTec AD are available at
