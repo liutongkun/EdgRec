@@ -13,3 +13,4 @@ python train.py --gpu_id 0 --obj_id -1 --lr 0.0001 --bs 8 --epochs 800 --data_pa
 python test.py --gpu_id 0 --base_model_name xxx(your checkpoint name) --data_path .../mvtec_ad/ --checkpoint_path xxx(your checkpoint path) --saveimages
 
 Pretraiend models on MVTec AD are available at
+https://drive.google.com/file/d/1npAqAo0UVlnI3_SpRfVIMtma3R_Cs_PD/view?usp=share_link
