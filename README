@@ -3,7 +3,7 @@ Currently the paper is under review, so we only provide a brief introduction her
 
 The code is implemented in pytorch, and most basic codes are from https://github.com/VitjanZ/DRAEM , a big thanks to their great work. We also use the codes from https://github.com/taikiinoue45/RIAD and https://www.mvtec.com/company/research/datasets/mvtec-3d-ad , thanks them a lot
 
-On average, our method can achieve 97.8(AUROC) detection performance on the MVTec AD dataset. To train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies).
+Our method can achieve 97.8 AUROC, (average result, slightly different each re-implementation) detection performance on the MVTec AD dataset. To train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies).
 The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path' to your own paths which include the mvtec ad dataset and the dtd dataset respectively.
 For testing, you could visualize the result images by add '--saveimages' (cost more time), otherwise it will only show the performance (faster)
 
@@ -14,3 +14,6 @@ python test.py --gpu_id 0 --base_model_name xxx(your checkpoint name) --data_pat
 
 Pretraiend models on MVTec AD are available at
 https://drive.google.com/file/d/1npAqAo0UVlnI3_SpRfVIMtma3R_Cs_PD/view?usp=share_link
+or Baidu disk:
+https://pan.baidu.com/s/1o4i-tlJvB9em-l6o8o_vKw 
+txk8 
