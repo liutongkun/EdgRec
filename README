@@ -1,5 +1,5 @@
 This is the code for the paper entitled "Reconstruction from edge image combined with color and gradient difference for industrial surface anomaly detection" (https://arxiv.org/abs/2210.14485)
-Currently the paper is under review, so we only provide a brief introduction here, which will be refined later. If you have any questions, you could also contact ltk988633@stu.xjtu.edu.cn, both in English or Chinese is OK.
+Currently the paper is under review, so we only provide a brief introduction here, which will be refined later. If you have any questions, you could also contact ltk98633@stu.xjtu.edu.cn, both in English or Chinese is OK.
 
 The code is implemented in pytorch, and most basic codes are from https://github.com/VitjanZ/DRAEM , a big thanks to their great work. We also use the codes from https://github.com/taikiinoue45/RIAD and https://www.mvtec.com/company/research/datasets/mvtec-3d-ad , thanks them a lot
 
