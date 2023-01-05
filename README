@@ -7,7 +7,7 @@ Our method can achieve 97.8 AUROC, (average result, slightly different each re-i
 
 Meanwhile, if you dont want use any external datasets like DTD, you could use 'data_loader-noDTD.py' to replace the orignal 'data_loader.py'. Here we refine the creation of pseudo anomalies without using any externel datasets. Experimentally it can achieve similar performance.
 
-The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path' to your own paths which include the mvtec ad dataset and the dtd dataset respectively.
+The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path'(when using data_loader-noDTD.py, this is not required)  to your own paths which include the mvtec ad dataset and the dtd dataset respectively.
 For testing, you could visualize the result images by add '--saveimages' (cost more time), otherwise it will only show the performance (faster)
 
 Like:
