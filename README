@@ -3,9 +3,9 @@ Currently the paper is under review, so we only provide a brief introduction her
 
 The code is implemented in pytorch, and most basic codes are from https://github.com/VitjanZ/DRAEM , a big thanks to their great work. We also use the codes from https://github.com/taikiinoue45/RIAD and https://www.mvtec.com/company/research/datasets/mvtec-3d-ad , thanks them a lot
 
-Our method can achieve 97.8 AUROC, (average result, slightly different each re-implementation) detection performance on the MVTec AD dataset. To train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies).
+Our method can achieve 97.8 AUROC, (average result, slightly different each re-implementation) detection performance on the MVTec AD dataset. 
 
-Meanwhile, if you dont want use any external datasets like DTD, you could use 'data_loader-noDTD.py' to replace the orignal 'data_loader.py'. Here we refine the creation of pseudo anomalies without using any externel datasets. Experimentally it can achieve similar performance.
+For the original paper, to train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies). Here we introduce a new creation of pseudo anomalies. You could also use 'data_loader-noDTD.py' to replace the orignal 'data_loader.py' which does not require any external dataset while achieves a similar performance (around 97.7).
 
 The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path'(when using data_loader-noDTD.py, this is not required)  to your own paths which include the mvtec ad dataset and the dtd dataset respectively.
 For testing, you could visualize the result images by add '--saveimages' (cost more time), otherwise it will only show the performance (faster)
