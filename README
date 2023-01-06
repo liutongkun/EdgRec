@@ -5,7 +5,7 @@ The code is implemented in pytorch, and most basic codes are from https://github
 
 Our method can achieve 97.8 AUROC, (average result, slightly different each re-implementation) detection performance on the MVTec AD dataset. 
 
-For the original paper, to train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies). Here we introduce a new creation of pseudo anomalies. You could also use 'data_loader-noDTD.py' to replace the orignal 'data_loader.py' which does not require any external dataset while achieves a similar performance (around 97.7).
+For the original paper, to train the model, you need to download MVTec AD dataset and the DTD dataset(for creating pseduo anomalies). Here we introduce a new creation of pseudo anomalies. You could also use 'data_loader-noDTD.py' to replace the orignal 'data_loader.py' which does not require any external dataset while achieves almost the same performance.
 
 The parameters for training and testing can be found in 'train&test_para.txt'. You need to change the '--data_path' and '--anomaly_source_path'(when using data_loader-noDTD.py, this is not required)  to your own paths which include the mvtec ad dataset and the dtd dataset respectively.
 For testing, you could visualize the result images by add '--saveimages' (cost more time), otherwise it will only show the performance (faster)
