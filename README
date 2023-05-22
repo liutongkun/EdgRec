@@ -1,3 +1,6 @@
+2023/5/22:
+Combine our network with a discriminative network like DRAEM can achieve an image-level detection performance of 98.7. We will refine the code later
+
 This is the code for the paper entitled "Reconstruction from edge image combined with color and gradient difference for industrial surface anomaly detection" (https://arxiv.org/abs/2210.14485)
 Currently the paper is under review, so we only provide a brief introduction here, which will be refined later. If you have any questions, you could also contact ltk98633@stu.xjtu.edu.cn, both in English or Chinese is OK.
 
