@@ -7,7 +7,7 @@ from torch.nn import Module
 
 
 class MSGMSLoss(Module):
-    def __init__(self, num_scales: int = 3, in_channels: int = 3) -> None:
+    def __init__(self, num_scales: int = 2, in_channels: int = 3) -> None:
 
         super().__init__()
         self.num_scales = num_scales
