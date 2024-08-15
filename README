@@ -23,13 +23,9 @@ python test.py --gpu_id 0 --base_model_name xxx(your checkpoint name) --data_pat
 Also you can reduce the epochs or network channels (originally 128) for fast implementation, as we didn't carefully adjusted these parameters (we have tried to reduce the channel to 64, the performance is around 97.4)     
 
 MVTec AD pretrained：
-https://drive.google.com/file/d/1npAqAo0UVlnI3_SpRfVIMtma3R_Cs_PD/view?usp=share_link
-or Baidu disk:
 https://pan.baidu.com/s/1o4i-tlJvB9em-l6o8o_vKw 
 txk8 
 
 MVTec 3D AD pretrained：
-https://drive.google.com/file/d/1M0T61ET1XZOfmX_kmXebHp6Jdr44fdp4/view?usp=share_link
-or
 https://pan.baidu.com/s/1bD-gvo8OmIWWBZv6pe9l8Q 
 lkjo 
